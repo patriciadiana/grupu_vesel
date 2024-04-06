@@ -4,9 +4,12 @@ using UnityEngine;
 
 public class BulletScript : MonoBehaviour
 {
+
+    public int bulletDamage=20;
     // Start is called before the first frame update
     private void OnCollisionEnter(Collision collision)
     {
+     
         
 
         if (collision.gameObject.CompareTag("Target"))
@@ -22,6 +25,12 @@ public class BulletScript : MonoBehaviour
             CreateBulletImpactEffect(collision);
             Destroy(gameObject);
         }
+        if (collision.gameObject.CompareTag("Enemy"))
+        {
+            collision.gameObject.GetComponent<EnemyScript>().TakeDamage(bulletDamage);
+            Destroy(gameObject);
+        }
+
     }
 
     void CreateBulletImpactEffect(Collision objectWeHit)

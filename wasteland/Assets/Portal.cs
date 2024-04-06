@@ -9,7 +9,7 @@ public class Portal : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        FPSController player = other.GetComponent<FPSController>();
+        PlayerMovement player = other.GetComponent<PlayerMovement>();
         if (player != null)
         {
             if (player.justTeleported == false)
@@ -22,7 +22,7 @@ public class Portal : MonoBehaviour
             }
         }
     }
-    IEnumerator Teleport(FPSController player)
+    IEnumerator Teleport(PlayerMovement player)
     {
         yield return new WaitForSeconds(1);
         player.justTeleported = true;

@@ -16,7 +16,10 @@ public class PlayerMovement : MonoBehaviour
     public float crouchHeight = 1f;
     public float crouchSpeed = 3f;
     public bool justTeleported = false;
+    public GameObject objectToToggle;
 
+   
+    public GameObject player;
     private Vector3 moveDirection = Vector3.zero;
     private float rotationX = 0;
     private CharacterController characterController;
@@ -78,5 +81,20 @@ public class PlayerMovement : MonoBehaviour
             playerCamera.transform.localRotation = Quaternion.Euler(rotationX, 0, 0);
             transform.rotation *= Quaternion.Euler(0, Input.GetAxis("Mouse X") * lookSpeed, 0);
         }
+
+        if (player != null && objectToToggle != null)
+        {
+            if (transform.position.x < 161f)
+            {
+                // Activate the object
+                objectToToggle.SetActive(true);
+            }
+            else
+            {
+                // Deactivate the object
+                objectToToggle.SetActive(false);
+            }
+        }
     }
+    
 }

@@ -8,9 +8,11 @@ public class EnemyScript : MonoBehaviour
 {
     [SerializeField] private int HP = 100;
     private Animator animator;
+    public GameObject character;
 
     private NavMeshAgent navAgent;
-
+    [SerializeField] private AudioClip damageSoundClip;
+    [SerializeField] private AudioClip dyingSoundClip;
     private void Start()
     {
         animator = GetComponent<Animator>();
@@ -23,19 +25,28 @@ public class EnemyScript : MonoBehaviour
         if (HP <= 0)
         {
             int randomValue = Random.Range(0, 2);
+            SoundFXManager.instance.PlaySoundFXClip(dyingSoundClip, transform, 1f);
 
             if (randomValue == 0)
             {
                 animator.SetTrigger("DIE1");
-                SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+                if (character.gameObject.CompareTag("Inamicu"))
+                {
+                    SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+                }
             }
-            else {
+            else if(randomValue == 1)
+            {
                 animator.SetTrigger("DIE2");
-                SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+                if (character.gameObject.CompareTag("Inamicu"))
+                {
+                    SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+                }
             }
         }
         else
         {
+            SoundFXManager.instance.PlaySoundFXClip(damageSoundClip, transform, 1f);
             animator.SetTrigger("DAMAGE");
         }
 

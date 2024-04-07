@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
+using UnityEngine.SceneManagement;
 
 public class EnemyScript : MonoBehaviour
 {
@@ -26,13 +27,12 @@ public class EnemyScript : MonoBehaviour
             if (randomValue == 0)
             {
                 animator.SetTrigger("DIE1");
+                SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
             }
             else {
                 animator.SetTrigger("DIE2");
+                SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
             }
-
-            
-            
         }
         else
         {

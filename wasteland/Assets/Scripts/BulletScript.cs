@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class BulletScript : MonoBehaviour
 {
@@ -36,9 +37,6 @@ public class BulletScript : MonoBehaviour
             collision.gameObject.GetComponent<EnemyScript>().TakeDamage(bulletDamage);
             Destroy(gameObject);
         }
-
-
-
     }
 
     void CreateBulletImpactEffect(Collision objectWeHit)

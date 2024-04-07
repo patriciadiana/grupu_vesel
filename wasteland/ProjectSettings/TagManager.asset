@@ -9,6 +9,7 @@ TagManager:
   - Enemy
   - Waypoints
   - ZombieHand
+  - Inamicu
   layers:
   - Default
   - TransparentFX

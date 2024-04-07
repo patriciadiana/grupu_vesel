@@ -31,6 +31,14 @@ public class BulletScript : MonoBehaviour
             Destroy(gameObject);
         }
 
+        if (collision.gameObject.CompareTag("Inamicu"))
+        {
+            collision.gameObject.GetComponent<EnemyScript>().TakeDamage(bulletDamage);
+            Destroy(gameObject);
+        }
+
+
+
     }
 
     void CreateBulletImpactEffect(Collision objectWeHit)

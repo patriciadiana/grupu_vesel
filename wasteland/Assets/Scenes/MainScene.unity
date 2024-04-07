@@ -950,7 +950,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   vampireHand: {fileID: 1129085205}
-  vampireDamage: 25
+  vampireDamage: 15
 --- !u!136 &148952807
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -2060,7 +2060,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   vampireHand: {fileID: 1950975630}
-  vampireDamage: 25
+  vampireDamage: 15
 --- !u!136 &472881516
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -2730,7 +2730,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   vampireHand: {fileID: 255492393}
-  vampireDamage: 25
+  vampireDamage: 15
 --- !u!136 &589092827
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -3501,7 +3501,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   vampireHand: {fileID: 1940827333}
-  vampireDamage: 25
+  vampireDamage: 15
 --- !u!136 &797472349
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -8798,7 +8798,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   vampireHand: {fileID: 1863623597}
-  vampireDamage: 25
+  vampireDamage: 15
 --- !u!136 &980226650
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -9810,7 +9810,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   vampireHand: {fileID: 422662199}
-  vampireDamage: 25
+  vampireDamage: 15
 --- !u!114 &1375023918
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15687,7 +15687,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   vampireHand: {fileID: 1297226296}
-  vampireDamage: 25
+  vampireDamage: 15
 --- !u!136 &1600298699
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -15916,7 +15916,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   vampireHand: {fileID: 1383994019}
-  vampireDamage: 25
+  vampireDamage: 15
 --- !u!114 &1682999110
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16995,7 +16995,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   vampireHand: {fileID: 1764067244}
-  vampireDamage: 25
+  vampireDamage: 15
 --- !u!114 &1933569966
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -22438,7 +22438,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   vampireHand: {fileID: 1966116497}
-  vampireDamage: 25
+  vampireDamage: 15
 --- !u!1001 &2026278504
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -22577,7 +22577,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   vampireHand: {fileID: 2070488744}
-  vampireDamage: 25
+  vampireDamage: 15
 --- !u!136 &2026278511
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -23198,7 +23198,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 86c41c21fd2286449898ad796bdb807c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  HP: 100
+  HP: 150
 --- !u!82 &6768483795586962462
 AudioSource:
   m_ObjectHideFlags: 0

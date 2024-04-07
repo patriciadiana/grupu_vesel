@@ -567,7 +567,7 @@ AudioSource:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 122851516}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: cda28aa756b906d449a2d5c507dcf9d0, type: 3}
@@ -668,7 +668,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 23cf1b6b03e3eb04d9d4b38798a137ed, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  character: {fileID: 122851516}
+  character: {fileID: 6768483795586962460}
   dialogClip: {fileID: 8300000, guid: cda28aa756b906d449a2d5c507dcf9d0, type: 3}
   triggerDistance: 2
 --- !u!1001 &131993693

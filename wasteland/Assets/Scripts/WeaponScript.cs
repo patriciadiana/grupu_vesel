@@ -26,7 +26,7 @@ public class WeaponScript : MonoBehaviour
     public GameObject muzzleEffect;
 
     private Animator animator;
-
+    [SerializeField] private AudioClip bulletSoundClip;
 
     public enum ShootingMode
     {
@@ -79,11 +79,11 @@ public class WeaponScript : MonoBehaviour
         
 
         GameObject bullet = Instantiate(bulletPrefab, bulletSpawn.position, Quaternion.identity);
-
+        SoundFXManager.instance.PlaySoundFXClip(bulletSoundClip, transform, 0.5f);
         bullet.transform.forward = shootingDirection;
 
         bullet.GetComponent<Rigidbody>().AddForce(bulletSpawn.forward.normalized * bulletVelocity, ForceMode.Impulse);
-
+        
         StartCoroutine(DestroyBulletAfterTime(bullet, bulletPrefabLifeTime));
 
         if (allowReset)

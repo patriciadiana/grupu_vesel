@@ -23358,6 +23358,10 @@ PrefabInstance:
       propertyPath: playerCamera
       value: 
       objectReference: {fileID: 4124617611004758424}
+    - target: {fileID: 5643140842736874580, guid: a5f508c9cad8a834f940492c65bced80, type: 3}
+      propertyPath: bulletSoundClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 124a8a20042cddc4e821ec368b9df8a4, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a5f508c9cad8a834f940492c65bced80, type: 3}
 --- !u!114 &8635465027341520361
